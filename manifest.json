@@ -1,0 +1,9 @@
+{
+  "name": "Cleo's Weather",
+  "short_name": "Weather",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#FFD60A",
+  "theme_color": "#FFD60A",
+  "icons": []
+}
