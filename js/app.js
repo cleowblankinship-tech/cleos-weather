@@ -1,5 +1,5 @@
 import { fetchWeather, searchPlaces } from './weather.js';
-import { speak } from './personality.js';
+import { speak, lines } from './personality.js';
 import { renderScene } from './scene.js';
 
 const $ = id => document.getElementById(id);
@@ -26,12 +26,14 @@ const uvLabel = u => (u < 3 ? 'Low' : u < 6 ? 'Moderate' : u < 8 ? 'High' : u < 
 async function load() {
   if (!state.place) return openDialog();
   $('locName').textContent = state.place.name;
+  $('headline').textContent = lines.loading[0];
+  $('subline').textContent = '';
   try {
     state.weather = await fetchWeather(state.place, state.units);
     render();
   } catch (e) {
-    $('headline').textContent = 'Couldn’t load weather';
-    $('subline').textContent = 'Check your connection and tap the location to retry.';
+    $('headline').textContent = lines.error[0];
+    $('subline').textContent = lines.error[1];
   }
 }
 
