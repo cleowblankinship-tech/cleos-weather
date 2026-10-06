@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#FFD60A"/>
+  <!-- rays -->
+  <g stroke="#140a2e" stroke-width="22" stroke-linecap="round" transform="translate(240 226)">
+    <g id="r"><path d="M0 -128 V-160"/><path d="M0 128 V160"/><path d="M-128 0 H-160"/><path d="M128 0 H160"/></g>
+    <use href="#r" transform="rotate(45)"/>
+  </g>
+  <!-- sun -->
+  <circle cx="250" cy="236" r="100" fill="#140a2e"/>
+  <circle cx="240" cy="226" r="100" fill="#FF3D7F" stroke="#140a2e" stroke-width="20"/>
+  <!-- cloud shadow -->
+  <path d="M148 420a56 56 0 0 1 8-111a76 76 0 0 1 144-14a62 62 0 0 1 22 125z" fill="#140a2e" transform="translate(12 12)"/>
+  <!-- cloud -->
+  <path d="M148 420a56 56 0 0 1 8-111a76 76 0 0 1 144-14a62 62 0 0 1 22 125z" fill="#2EE6C5" stroke="#140a2e" stroke-width="20" stroke-linejoin="round"/>
+  <!-- face -->
+  <circle cx="232" cy="362" r="11" fill="#140a2e"/><circle cx="288" cy="362" r="11" fill="#140a2e"/>
+  <path d="M236 386q22 22 48 0" fill="none" stroke="#140a2e" stroke-width="12" stroke-linecap="round"/>
+</svg>
